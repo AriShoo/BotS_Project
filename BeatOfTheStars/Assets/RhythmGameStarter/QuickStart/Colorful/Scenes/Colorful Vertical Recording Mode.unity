@@ -5448,7 +5448,7 @@ PrefabInstance:
         type: 3}
       propertyPath: recordingTargets.values.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: e2688b14bfb8cad4d9905648d17ef3b8,
+      objectReference: {fileID: 11400000, guid: ad48ef024bcbc024f98dfe295ad16bee,
         type: 2}
     - target: {fileID: 2033510355370036101, guid: b031b4036c03d2f4c944e540cc81f622,
         type: 3}

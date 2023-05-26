@@ -517,6 +517,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.1517
       objectReference: {fileID: 0}
+    - target: {fileID: 1334330923360434076, guid: c1ce9239d495b4c488062fa3d1115a6c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1747620255029097255, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
       propertyPath: m_Material
@@ -531,13 +536,13 @@ PrefabInstance:
         type: 3}
       propertyPath: midiTracksMapping
       value: 
-      objectReference: {fileID: 11400000, guid: c2e839ca7db46044bbb2bb3bd1bda761,
+      objectReference: {fileID: 11400000, guid: 904d38ab643e64b419006a8ebfad3bb0,
         type: 2}
     - target: {fileID: 3281515198616772172, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
       propertyPath: notePrefabMapping
       value: 
-      objectReference: {fileID: 11400000, guid: dbf2927d18abb3541909bb3eb1ae9f8b,
+      objectReference: {fileID: 11400000, guid: d4872796bb166704f8c287c90537df3c,
         type: 2}
     - target: {fileID: 3281515198616772172, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
@@ -643,7 +648,7 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultSong
       value: 
-      objectReference: {fileID: 11400000, guid: fe487a7659cf492448e4d15cc3d1d90e,
+      objectReference: {fileID: 11400000, guid: 07da47ccfe9e1724498da1cabdba6c83,
         type: 2}
     - target: {fileID: 5885475234114016897, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
@@ -654,6 +659,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -169.98999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262136913902138227, guid: c1ce9239d495b4c488062fa3d1115a6c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8506034807539397702, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
