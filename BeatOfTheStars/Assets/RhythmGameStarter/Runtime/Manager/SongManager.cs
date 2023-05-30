@@ -23,7 +23,7 @@ namespace RhythmGameStarter
         public bool autoTimeScalePause;
 
         [Title("Display", 0)]
-        public bool progressAsPercentage = true;
+        public bool progressAsTimer = true;
         public bool inverseProgressFill = false;
 
         [HideInInspector] public float secPerBeat;
@@ -191,7 +191,7 @@ namespace RhythmGameStarter
 
                 if (songPosition >= 0)
                 {
-                    if (progressAsPercentage)
+                    if (progressAsTimer)
                         onSongProgressDisplay.Invoke(Math.Truncate(songPosition / currentSongItem.clip.length * 100) + "%");
                     else
                     {
