@@ -5448,13 +5448,13 @@ PrefabInstance:
         type: 3}
       propertyPath: recordingTargets.values.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: ad48ef024bcbc024f98dfe295ad16bee,
+      objectReference: {fileID: 11400000, guid: 64b761203cb1d74478b5d1daf3ab468f,
         type: 2}
     - target: {fileID: 2033510355370036101, guid: b031b4036c03d2f4c944e540cc81f622,
         type: 3}
       propertyPath: recordingTargets.values.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: fe487a7659cf492448e4d15cc3d1d90e,
+      objectReference: {fileID: 11400000, guid: 39ccb97ac3e0417479ddeebc60f42db6,
         type: 2}
     - target: {fileID: 2033510355370036101, guid: b031b4036c03d2f4c944e540cc81f622,
         type: 3}
@@ -5466,7 +5466,7 @@ PrefabInstance:
         type: 3}
       propertyPath: recordingTargets.values.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 39ccb97ac3e0417479ddeebc60f42db6,
+      objectReference: {fileID: 11400000, guid: ad48ef024bcbc024f98dfe295ad16bee,
         type: 2}
     - target: {fileID: 7828536937885372835, guid: b031b4036c03d2f4c944e540cc81f622,
         type: 3}
