@@ -264,7 +264,7 @@ PrefabInstance:
     - target: {fileID: 3102263514655162439, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3281515198616772172, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
@@ -296,7 +296,7 @@ PrefabInstance:
     - target: {fileID: 3352423985319767843, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 119.70999
+      value: 119.70996
       objectReference: {fileID: 0}
     - target: {fileID: 3619554793548568572, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
@@ -436,6 +436,11 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 5885475234114016897, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
+      propertyPath: inverseProgressFill
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5885475234114016897, guid: c1ce9239d495b4c488062fa3d1115a6c,
+        type: 3}
       propertyPath: progressAsPercentage
       value: 1
       objectReference: {fileID: 0}
@@ -482,7 +487,7 @@ PrefabInstance:
     - target: {fileID: 8322377543348954819, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8506034807539397702, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
@@ -779,7 +784,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -97, y: -91}
+  m_AnchoredPosition: {x: -196, y: -91}
   m_SizeDelta: {x: 109.95, y: 46.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657316958
@@ -814,7 +819,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 0:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
