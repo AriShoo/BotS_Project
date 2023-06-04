@@ -36,6 +36,7 @@ public class highScoreTable : MonoBehaviour
             entryTransform.Find("placementNo").GetComponent<Text>().text = rankString;
 
             int score = Random.Range(0, 10000);
+
             entryTransform.Find("scoreNo").GetComponent<Text>().text = score.ToString();
             
             string name = "AAA";
