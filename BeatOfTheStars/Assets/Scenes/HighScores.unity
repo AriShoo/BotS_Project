@@ -1036,7 +1036,7 @@ GameObject:
   - component: {fileID: 1102098729}
   - component: {fileID: 1102098728}
   m_Layer: 0
-  m_Name: placementNo
+  m_Name: posNo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1060,7 +1060,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 35.5931, y: 29.9175}
+  m_SizeDelta: {x: 61.157, y: 29.9175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1102098728
 MonoBehaviour:
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1578,7 +1578,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 94.1, y: -33.2}
+  m_AnchoredPosition: {x: 85.1, y: -32.2}
   m_SizeDelta: {x: 484.3956, y: 279.0759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1977613691

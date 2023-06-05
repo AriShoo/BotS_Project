@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class highScoreTable : MonoBehaviour
 {
@@ -33,7 +34,10 @@ public class highScoreTable : MonoBehaviour
                 case 2: rankString = "2ND"; break;
                 case 3: rankString = "3RD"; break;
             }
-            entryTransform.Find("placementNo").GetComponent<Text>().text = rankString;
+
+            Debug.Log("posNo");
+
+            entryTransform.Find("posNo").GetComponent<TextMeshProUGUI>().text = rankString;
 
             int score = Random.Range(0, 10000);
 
