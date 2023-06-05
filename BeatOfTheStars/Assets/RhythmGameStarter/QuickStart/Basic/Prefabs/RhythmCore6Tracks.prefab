@@ -7,10 +7,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 113662602001576448, guid: 8c4ea05311ba67e4a99ffbb1cb5dd565,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 374167794678625589, guid: 8c4ea05311ba67e4a99ffbb1cb5dd565,
         type: 3}
       propertyPath: keyMapping.values.Array.size
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 374167794678625589, guid: 8c4ea05311ba67e4a99ffbb1cb5dd565,
         type: 3}
