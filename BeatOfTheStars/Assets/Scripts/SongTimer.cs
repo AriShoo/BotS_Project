@@ -6,10 +6,13 @@ public class SongTimer : MonoBehaviour
 {
     public static float timer;
     public static bool timeStarted = false;
+    
 
     // Update is called once per frame
     void Update()
     {
+       // if 
+
         if (timeStarted == true)
         {
             timer += Time.deltaTime;

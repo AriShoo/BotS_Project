@@ -437,7 +437,7 @@ PrefabInstance:
     - target: {fileID: 5885475234114016897, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
       propertyPath: inverseProgressFill
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5885475234114016897, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
@@ -478,6 +478,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: 0%
+      objectReference: {fileID: 0}
+    - target: {fileID: 7638056902635604614, guid: c1ce9239d495b4c488062fa3d1115a6c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 98.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 7638056902635604614, guid: c1ce9239d495b4c488062fa3d1115a6c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 62.49
       objectReference: {fileID: 0}
     - target: {fileID: 8262136913902138227, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
