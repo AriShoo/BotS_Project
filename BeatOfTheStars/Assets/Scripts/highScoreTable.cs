@@ -24,7 +24,7 @@ public class highScoreTable : MonoBehaviour
 
         entryTemplate.gameObject.SetActive(false);
 
-        AddHighScoreEntry(10000, "ALS");
+       // AddHighScoreEntry(10000, "ALS");
 
         string jsonString = PlayerPrefs.GetString("highScoreTable");
         HighScores highscores = JsonUtility.FromJson<HighScores>(jsonString);
@@ -81,6 +81,15 @@ public class highScoreTable : MonoBehaviour
 
         string name = highscoreEntry.name;
         entryTransform.Find("nameEntry").GetComponent<TextMeshProUGUI>().text = name;
+
+        // Set fancy first place colour
+        if (rank == 1)
+        {
+            entryTransform.Find("posNo").GetComponent<TextMeshProUGUI>().color = firstPlaceColour;
+            entryTransform.Find("scoreNo").GetComponent<TextMeshProUGUI>().color = firstPlaceColour;
+            entryTransform.Find("nameEntry").GetComponent<TextMeshProUGUI>().color = firstPlaceColour;
+
+        }
 
         transformList.Add(entryTransform);
     }
