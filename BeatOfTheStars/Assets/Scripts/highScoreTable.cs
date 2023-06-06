@@ -24,8 +24,6 @@ public class highScoreTable : MonoBehaviour
 
         entryTemplate.gameObject.SetActive(false);
 
-       // AddHighScoreEntry(10000, "ALS");
-
         string jsonString = PlayerPrefs.GetString("highScoreTable");
         HighScores highscores = JsonUtility.FromJson<HighScores>(jsonString);
 
