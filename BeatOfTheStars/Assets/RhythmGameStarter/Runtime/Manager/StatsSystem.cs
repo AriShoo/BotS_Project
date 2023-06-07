@@ -25,7 +25,10 @@ namespace RhythmGameStarter
         [NonSerialized] public int score;
 
         #endregion
+
         public SongManager songManager;
+        string scoreKey = "Score";
+        public bool Reset = false;
 
         [Serializable]
         public class HitLevelList : ReorderableList<HitLevel>
@@ -109,14 +112,32 @@ namespace RhythmGameStarter
 
         public void GameOver()
         {
-        
                 songManager.PauseSong();
-            
         }
         //----------------------
         public void UpdateScoreDisplay()
         {
             onScoreUpdate.Invoke(score.ToString());
+        }
+
+        private void Awake()
+        {
+            score = PlayerPrefs.GetInt(scoreKey);
+            if (Reset == true)
+            {
+                score = 0;
+            }
+        }
+
+        private void OnDestroy()
+        {
+            PlayerPrefs.SetInt(scoreKey, score);
+            PlayerPrefs.Save();
+        }
+
+        public void SetScore(int score)
+        {
+            PlayerPrefs.SetInt(scoreKey, score);
         }
     }
 }
