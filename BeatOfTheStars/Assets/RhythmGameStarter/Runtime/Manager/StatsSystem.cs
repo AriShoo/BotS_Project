@@ -112,7 +112,8 @@ namespace RhythmGameStarter
 
         public void GameOver()
         {
-                songManager.PauseSong();
+            songManager.PauseSong();
+            Debug.Log(score);
         }
         //----------------------
         public void UpdateScoreDisplay()
