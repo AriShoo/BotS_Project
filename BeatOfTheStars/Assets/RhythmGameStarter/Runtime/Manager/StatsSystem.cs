@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace RhythmGameStarter
@@ -100,7 +101,7 @@ namespace RhythmGameStarter
                     x.onCountUpdate.Invoke(x.count.ToString());
                     UpdateScoreDisplay();
                     onComboStatusUpdate.Invoke(x.name);
-                    // print(x.name);
+                   // print(x.name);
                     return;
                 }
             }
@@ -113,7 +114,7 @@ namespace RhythmGameStarter
         public void GameOver()
         {
             songManager.PauseSong();
-            Debug.Log(score);
+            
         }
         //----------------------
         public void UpdateScoreDisplay()
