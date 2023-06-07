@@ -25,6 +25,7 @@ namespace RhythmGameStarter
         [NonSerialized] public int score;
 
         #endregion
+        public SongManager songManager;
 
         [Serializable]
         public class HitLevelList : ReorderableList<HitLevel>
@@ -45,6 +46,11 @@ namespace RhythmGameStarter
         {
             missed += addMissed;
             onMissedUpdate.Invoke(missed.ToString());
+            if(missed >= 10)
+            {
+                GameOver();
+            }
+
         }
 
         void Start()
@@ -99,7 +105,15 @@ namespace RhythmGameStarter
             //When no level matched
             onComboStatusUpdate.Invoke("");
         }
+        //---------------------
 
+        public void GameOver()
+        {
+        
+                songManager.PauseSong();
+            
+        }
+        //----------------------
         public void UpdateScoreDisplay()
         {
             onScoreUpdate.Invoke(score.ToString());

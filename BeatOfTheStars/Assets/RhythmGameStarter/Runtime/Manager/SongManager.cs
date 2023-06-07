@@ -119,7 +119,7 @@ namespace RhythmGameStarter
 
         public void PauseSong()
         {
-            if (songPaused) return;
+           // if (songPaused) return;
 
             songPaused = true;
             if (audioSource) audioSource.Pause();

@@ -16,7 +16,6 @@ public class highScoreTable : MonoBehaviour
 
     private List<Transform> highscoreEntryTransformList;
 
-
     private void Awake()
     {
         entryContainer = transform.Find("hsEntryContainer");
