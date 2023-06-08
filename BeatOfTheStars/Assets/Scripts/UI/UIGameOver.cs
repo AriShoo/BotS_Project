@@ -30,6 +30,7 @@ public class UIGameOver : MonoBehaviour
         string scoreKey = "Score";
         Stats.score = PlayerPrefs.GetInt(scoreKey);
 
+
         Debug.Log("Save highscore");
         
         
