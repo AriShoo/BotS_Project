@@ -26,7 +26,7 @@ namespace RhythmGameStarter
         [NonSerialized] public int score;
 
         #endregion
-
+        
         public SongManager songManager;
         string scoreKey = "Score";
         public bool Reset = false;
@@ -53,6 +53,7 @@ namespace RhythmGameStarter
             if(missed >= 10)
             {
                 GameOver();
+                
             }
 
         }
@@ -114,7 +115,6 @@ namespace RhythmGameStarter
         public void GameOver()
         {
             songManager.PauseSong();
-            
         }
         //----------------------
         public void UpdateScoreDisplay()

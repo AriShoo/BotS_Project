@@ -20,7 +20,8 @@ public class ScenesManager : MonoBehaviour
         Level2,
         Level3,
         Credits,
-        HighScores
+        HighScores,
+        GameOver
     }
 
     public void LoadScene(Scene scene)
