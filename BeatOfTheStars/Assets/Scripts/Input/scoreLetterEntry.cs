@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using JetBrains.Annotations;
 
 public class scoreLetterEntry : MonoBehaviour
 {
@@ -12,9 +11,10 @@ public class scoreLetterEntry : MonoBehaviour
     private int index;
     public string currentLetter;
 
+
     private void Update()
     {
-        Text letter = GameObject.Find("letter").GetComponent<Text>();
+        TextMeshProUGUI letter = GameObject.Find("letter").GetComponent<TextMeshProUGUI>();
 
         if (Input.GetKeyUp(KeyCode.UpArrow))
         {
@@ -24,6 +24,7 @@ public class scoreLetterEntry : MonoBehaviour
 
             // set text to letter
             letter.text = alpha[index].ToString();
+            Debug.Log(letter.text);
         }
 
         if (Input.GetKeyUp(KeyCode.DownArrow))
@@ -34,6 +35,7 @@ public class scoreLetterEntry : MonoBehaviour
 
             // set text to letter
             letter.text = alpha[index].ToString();
+            Debug.Log(letter.text);
         }
 
         if (Input.GetKeyUp(KeyCode.Keypad7))
