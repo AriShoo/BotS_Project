@@ -5087,22 +5087,22 @@ PrefabInstance:
     - target: {fileID: 8973612405871675903, guid: fe644e17ab53a314f926aa81d877b247,
         type: 3}
       propertyPath: keyMapping.values.Array.data[0]
-      value: a
+      value: '[4]'
       objectReference: {fileID: 0}
     - target: {fileID: 8973612405871675903, guid: fe644e17ab53a314f926aa81d877b247,
         type: 3}
       propertyPath: keyMapping.values.Array.data[1]
-      value: w
+      value: '[8]'
       objectReference: {fileID: 0}
     - target: {fileID: 8973612405871675903, guid: fe644e17ab53a314f926aa81d877b247,
         type: 3}
       propertyPath: keyMapping.values.Array.data[2]
-      value: s
+      value: '[5]'
       objectReference: {fileID: 0}
     - target: {fileID: 8973612405871675903, guid: fe644e17ab53a314f926aa81d877b247,
         type: 3}
       propertyPath: keyMapping.values.Array.data[3]
-      value: d
+      value: '[6]'
       objectReference: {fileID: 0}
     - target: {fileID: 8973612405871675903, guid: fe644e17ab53a314f926aa81d877b247,
         type: 3}

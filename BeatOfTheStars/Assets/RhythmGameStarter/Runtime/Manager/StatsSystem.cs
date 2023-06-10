@@ -119,7 +119,6 @@ namespace RhythmGameStarter
         public void gameOver()
         {
             songManager.PauseSong();
-            SceneManager.GetSceneByBuildIndex(8);
             
         }
         //----------------------

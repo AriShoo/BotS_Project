@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System;
+using UnityEngine.SceneManagement;
 
 namespace RhythmGameStarter
 {
@@ -11,6 +12,7 @@ namespace RhythmGameStarter
     {
         [Comment("Responsible for song control, handling song related events.")]
         public AudioSource audioSource;
+        
 
         [Title("Properties", 0)]
         [Space]
