@@ -6,9 +6,13 @@ using TMPro;
 
 public class scoreLetterEntry : MonoBehaviour
 {
+    ScoreEntryManager scoreEntryManager;
+
     public char[] alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
 
     private int index;
+
+    [HideInInspector]
     public string currentLetter;
 
 
@@ -16,7 +20,7 @@ public class scoreLetterEntry : MonoBehaviour
     {
         TextMeshProUGUI letter = GameObject.Find("letter").GetComponent<TextMeshProUGUI>();
 
-        if (Input.GetKeyUp(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             index++;
             if (index >= alpha.Length)
@@ -27,7 +31,7 @@ public class scoreLetterEntry : MonoBehaviour
             Debug.Log(letter.text);
         }
 
-        if (Input.GetKeyUp(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             index--;
             if (index < 0)
@@ -40,9 +44,9 @@ public class scoreLetterEntry : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Keypad7))
         {
-            letter.text = currentLetter;
+            currentLetter = letter.text;
+            Debug.Log("Submit button pressed");
         }
 
-        
     }
 }

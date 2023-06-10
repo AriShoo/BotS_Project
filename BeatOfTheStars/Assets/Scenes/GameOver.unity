@@ -243,9 +243,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2bc000d1594ad044a8f39c3d48d12a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stats: {fileID: 0}
-  scoreLetterEntry: {fileID: 0}
-  highScoreTable: {fileID: 0}
   Letter1: {fileID: 403498014}
   Letter2: {fileID: 360042119}
   Letter3: {fileID: 1309914926}
@@ -1237,6 +1234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 466067465}
+  - component: {fileID: 466067466}
   m_Layer: 0
   m_Name: ScenesManager
   m_TagString: Untagged
@@ -1259,6 +1257,18 @@ Transform:
   m_Father: {fileID: 382394098}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &466067466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466067464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1c31906ca12f7489589bbfeb37faa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &485630220
 GameObject:
   m_ObjectHideFlags: 0

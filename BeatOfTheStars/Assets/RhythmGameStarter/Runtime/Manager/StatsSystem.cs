@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace RhythmGameStarter
 {
     [HelpURL("https://bennykok.gitbook.io/rhythm-game-starter/hierarchy-overview/stats-system")]
     public class StatsSystem : MonoBehaviour
     {
+
         [Comment("Responsible for advance stats' config and events.", order = 0)]
         [Title("Hit Level Config", false, 2, order = 1)]
         [Tooltip("Config the hit distance difference for each level, such as Perfect,Ok etc")]
@@ -24,6 +27,7 @@ namespace RhythmGameStarter
         [NonSerialized] public int maxCombo;
         [NonSerialized] public int missed;
         [NonSerialized] public int score;
+
 
         #endregion
         
@@ -52,7 +56,7 @@ namespace RhythmGameStarter
             onMissedUpdate.Invoke(missed.ToString());
             if(missed >= 10)
             {
-                GameOver();
+                gameOver();
                 
             }
 
@@ -112,9 +116,11 @@ namespace RhythmGameStarter
         }
         //---------------------
 
-        public void GameOver()
+        public void gameOver()
         {
             songManager.PauseSong();
+            SceneManager.GetSceneByBuildIndex(8);
+            
         }
         //----------------------
         public void UpdateScoreDisplay()

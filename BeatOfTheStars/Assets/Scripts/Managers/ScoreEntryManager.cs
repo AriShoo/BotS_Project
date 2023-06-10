@@ -6,9 +6,11 @@ using TMPro;
 using RhythmGameStarter;
 using UnityEngine.EventSystems;
 using System.Linq;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 
 public class ScoreEntryManager : MonoBehaviour
 {
+    [HideInInspector]
     StatsSystem Stats;
     scoreLetterEntry scoreLetterEntry;
     highScoreTable highScoreTable;
@@ -24,8 +26,6 @@ public class ScoreEntryManager : MonoBehaviour
         
     }
 
-    public int letterSelected;
-    int score = 123456;
 
     private void Update()
     {
@@ -34,43 +34,25 @@ public class ScoreEntryManager : MonoBehaviour
         GameObject _Letter3 = GameObject.Find("_Letter3"); // 2
         GameObject Buttons = GameObject.Find("Buttons");
 
-
-
-        if (Input.GetKeyUp(KeyCode.Keypad7))
-        {
-            letterSelected++;
-            if (letterSelected > 2) eventSystem.SetSelectedGameObject(GameObject.Find("Buttons"));
-        }
-
         
 
-
-
-        string name = Letter1.currentLetter + Letter2.currentLetter + Letter3.currentLetter;
     }
 
-  
+    private void UpdateHighScore()
+    {
+        Letter1.currentLetter = scoreLetterEntry.currentLetter;
+        Letter2.currentLetter = scoreLetterEntry.currentLetter;
+        Letter3.currentLetter = scoreLetterEntry.currentLetter;
 
-    /* switch (order)
-     {
-         case 1:
-             if (Input.GetKeyUp(KeyCode.Keypad7))
-             _Letter1.SetActive(true);
-             _Letter2.SetActive(false);
-             _Letter3.SetActive(false); break;
-         case 2:
-             if (Input.GetKeyUp(KeyCode.Keypad7))
-             _Letter1.SetActive(false);
-             _Letter2.SetActive(true);
-             _Letter3.SetActive(false); break;
-         case 3:
-             if (Input.GetKeyUp(KeyCode.Keypad7))
-             _Letter1.SetActive(false);
-             _Letter2.SetActive(false);
-             _Letter3.SetActive(true); break;
+        string name = Letter1.currentLetter + Letter2.currentLetter + Letter3.currentLetter;
 
-     }*/
+        string scoreKey = "Score";
+        int score = PlayerPrefs.GetInt(scoreKey);
 
+        highScoreTable.AddHighScoreEntry(score, name);
+
+    }
+    
 
 
 } 

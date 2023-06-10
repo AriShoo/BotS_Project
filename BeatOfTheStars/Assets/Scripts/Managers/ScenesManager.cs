@@ -43,4 +43,9 @@ public class ScenesManager : MonoBehaviour
     {
         SceneManager.LoadScene(Scene.MainMenu.ToString());
     }
+
+    public void LoadGameOver()
+    {
+        SceneManager.LoadScene(Scene.GameOver.ToString());
+    }
 }
