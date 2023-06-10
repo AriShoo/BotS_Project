@@ -14,6 +14,7 @@ namespace RhythmGameStarter
         public AudioSource audioSource;
         
 
+
         [Title("Properties", 0)]
         [Space]
         public bool playOnAwake = true;
