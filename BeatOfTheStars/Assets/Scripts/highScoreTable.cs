@@ -26,24 +26,30 @@ public class highScoreTable : MonoBehaviour
         string jsonString = PlayerPrefs.GetString("highScoreTable");
         HighScores highscores = JsonUtility.FromJson<HighScores>(jsonString);
 
-        for (int i = 0; i < highscores.highScoreEntryList.Count; i++)
-        {
-            for (int j = i + 1; j < highscores.highScoreEntryList.Count; j++)
-            {
-                if (highscores.highScoreEntryList[j].score > highscores.highScoreEntryList[i].score)
-                {
-                    //swap
-                    HighScoreEntry tmp = highscores.highScoreEntryList[i];
-                    highscores.highScoreEntryList[i] = highscores.highScoreEntryList[j];
-                    highscores.highScoreEntryList[j] = tmp;
-                }
-            }
-        }
+        SortHighScores(highscores);
 
         highscoreEntryTransformList = new List<Transform>();
         foreach (HighScoreEntry highscoreEntry in highscores.highScoreEntryList)
         {
             CreateHighScoreEntryTransform(highscoreEntry, entryContainer, highscoreEntryTransformList);
+        }
+    }
+
+    private static void SortHighScores(HighScores toSort)
+    {
+
+        for (int i = 0; i < toSort.highScoreEntryList.Count; i++)
+        {
+            for (int j = i + 1; j < toSort.highScoreEntryList.Count; j++)
+            {
+                if (toSort.highScoreEntryList[j].score > toSort.highScoreEntryList[i].score)
+                {
+                    //swap
+                    HighScoreEntry tmp = toSort.highScoreEntryList[i];
+                    toSort.highScoreEntryList[i] = toSort.highScoreEntryList[j];
+                    toSort.highScoreEntryList[j] = tmp;
+                }
+            }
         }
     }
 
@@ -106,6 +112,8 @@ public class highScoreTable : MonoBehaviour
 
         // Add new
         highscores.highScoreEntryList.Add(highScoreEntry);
+
+        SortHighScores(highscores);
 
         // Limit to 10 rankings
         if (highscores.highScoreEntryList.Count > 10)

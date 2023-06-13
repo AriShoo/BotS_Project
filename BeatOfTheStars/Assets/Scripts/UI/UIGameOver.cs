@@ -15,7 +15,7 @@ public class UIGameOver : MonoBehaviour
 
     void Start()
     {
-        _menuButton.onClick.AddListener(MainMenu);
+        
     }
 
     private void MainMenu()

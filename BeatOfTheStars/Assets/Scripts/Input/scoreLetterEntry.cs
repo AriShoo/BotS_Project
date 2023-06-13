@@ -18,7 +18,7 @@ public class scoreLetterEntry : MonoBehaviour
 
     private void Update()
     {
-        TextMeshProUGUI letter = GameObject.Find("letter").GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI letter = transform.Find("letter").GetComponent<TextMeshProUGUI>();
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
@@ -28,6 +28,8 @@ public class scoreLetterEntry : MonoBehaviour
 
             // set text to letter
             letter.text = alpha[index].ToString();
+
+            currentLetter = letter.text;
             Debug.Log(letter.text);
         }
 
@@ -39,6 +41,8 @@ public class scoreLetterEntry : MonoBehaviour
 
             // set text to letter
             letter.text = alpha[index].ToString();
+
+            currentLetter = letter.text;
             Debug.Log(letter.text);
         }
 
