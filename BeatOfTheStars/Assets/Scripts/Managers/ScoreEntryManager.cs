@@ -12,13 +12,11 @@ public class ScoreEntryManager : MonoBehaviour
 {
     [HideInInspector]
     StatsSystem Stats;
-    scoreLetterEntry scoreLetterEntry;
-    highScoreTable highScoreTable;
+   
     EventSystem eventSystem;
 
-    [SerializeField] public scoreLetterEntry Letter1;
-    [SerializeField] public scoreLetterEntry Letter2;
-    [SerializeField] public scoreLetterEntry Letter3;
+    [SerializeField] public scoreLetterEntry[] Letters;
+    int letterIndex = 0;
     
 
     private void Start()
@@ -29,22 +27,31 @@ public class ScoreEntryManager : MonoBehaviour
 
     private void Update()
     {
-        GameObject _Letter1 = GameObject.Find("_Letter1"); // 0
-        GameObject _Letter2 = GameObject.Find("_Letter2"); // 1
-        GameObject _Letter3 = GameObject.Find("_Letter3"); // 2
         GameObject Buttons = GameObject.Find("Buttons");
 
-        
+
+
+        if (Input.GetKeyUp(KeyCode.Keypad7))
+        {
+            Letters[letterIndex].enabled = false;
+            letterIndex++;
+            if(letterIndex > Letters.Length)
+            {
+                UpdateHighScore();
+                ScenesManager.instance.LoadHighScore();
+            }
+            else
+            {
+                Letters[letterIndex].enabled = true;
+            }
+        }
 
     }
 
     private void UpdateHighScore()
     {
-        Letter1.currentLetter = scoreLetterEntry.currentLetter;
-        Letter2.currentLetter = scoreLetterEntry.currentLetter;
-        Letter3.currentLetter = scoreLetterEntry.currentLetter;
 
-        string name = Letter1.currentLetter + Letter2.currentLetter + Letter3.currentLetter;
+        string name = Letters[0].currentLetter + Letters[1].currentLetter + Letters[2].currentLetter;
 
         string scoreKey = "Score";
         int score = PlayerPrefs.GetInt(scoreKey);

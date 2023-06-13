@@ -1177,6 +1177,11 @@ PrefabInstance:
       propertyPath: levels.values.Array.data[2].onCountUpdate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3699038379547713451, guid: c1ce9239d495b4c488062fa3d1115a6c,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3912046523040945580, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
       propertyPath: m_IsActive
@@ -1345,6 +1350,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8143809284115321098, guid: c1ce9239d495b4c488062fa3d1115a6c,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8262136913902138227, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}

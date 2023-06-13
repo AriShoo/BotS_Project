@@ -243,9 +243,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2bc000d1594ad044a8f39c3d48d12a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Letter1: {fileID: 403498014}
-  Letter2: {fileID: 360042119}
-  Letter3: {fileID: 1309914926}
+  Letters:
+  - {fileID: 403498014}
+  - {fileID: 360042119}
+  - {fileID: 1309914926}
 --- !u!1 &186241452
 GameObject:
   m_ObjectHideFlags: 0

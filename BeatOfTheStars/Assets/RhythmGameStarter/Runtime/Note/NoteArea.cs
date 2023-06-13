@@ -80,7 +80,7 @@ namespace RhythmGameStarter
 
             if (currentFingerID != -1)
             {
-               // touch = touchInputHandler.GetTouchById(currentFingerID);
+                //touch = touchInputHandler.GetTouchById(currentFingerID);
 
                 if (touch.phase == TouchPhase.Canceled || touch.phase == TouchPhase.Ended)
                 {

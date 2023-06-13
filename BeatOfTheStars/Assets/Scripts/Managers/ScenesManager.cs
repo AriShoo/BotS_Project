@@ -48,4 +48,9 @@ public class ScenesManager : MonoBehaviour
     {
         SceneManager.LoadScene(Scene.GameOver.ToString());
     }
+
+    public void LoadHighScore()
+    {
+        SceneManager.LoadScene(Scene.HighScores.ToString());
+    }
 }
