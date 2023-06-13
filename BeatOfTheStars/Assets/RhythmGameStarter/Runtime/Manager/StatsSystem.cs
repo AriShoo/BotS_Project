@@ -54,11 +54,11 @@ namespace RhythmGameStarter
         {
             missed += addMissed;
             onMissedUpdate.Invoke(missed.ToString());
-            if(missed >= 10)
+            /*if(missed >= 10)
             {
                 gameOver();
                 
-            }
+            }*/
 
         }
 
@@ -116,11 +116,11 @@ namespace RhythmGameStarter
         }
         //---------------------
 
-        public void gameOver()
+       /* public void gameOver()
         {
             songManager.PauseSong();
             
-        }
+        }*/
         //----------------------
         public void UpdateScoreDisplay()
         {
