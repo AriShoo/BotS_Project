@@ -334,7 +334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 2021445545}
+  m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &374578534
@@ -1060,7 +1060,7 @@ PrefabInstance:
         type: 3}
       propertyPath: notePrefabMapping
       value: 
-      objectReference: {fileID: 11400000, guid: d4872796bb166704f8c287c90537df3c,
+      objectReference: {fileID: 11400000, guid: dbf2927d18abb3541909bb3eb1ae9f8b,
         type: 2}
     - target: {fileID: 3281515198616772172, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
@@ -2280,12 +2280,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908606253}
   m_CullTransparentMesh: 1
---- !u!1 &2021445545 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8639366602740693585, guid: c1ce9239d495b4c488062fa3d1115a6c,
-    type: 3}
-  m_PrefabInstance: {fileID: 993976703}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2038921477
 GameObject:
   m_ObjectHideFlags: 0
