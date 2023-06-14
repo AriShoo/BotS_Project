@@ -18,6 +18,9 @@ public class highScoreTable : MonoBehaviour
 
     private void Awake()
     {
+        // TEMP - Uncomment when you want to clear the scores
+        //PlayerPrefs.DeleteAll();
+
         entryContainer = transform.Find("hsEntryContainer");
         entryTemplate = entryContainer.Find("hsEntryTemplate");
 

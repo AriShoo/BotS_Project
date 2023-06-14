@@ -15,6 +15,6 @@ public class UISplashMenu : MonoBehaviour
     private void AnyButton()
     {
         Debug.Log("Go to Main Menu");
-        ScenesManager.instance.LoadScene(ScenesManager.Scene.MainMenu);
+        ScenesManager.instance.LoadScene(ScenesManager.Scene.SplashScreen);
     }
 }

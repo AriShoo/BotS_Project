@@ -20,8 +20,8 @@ public class loadLevel : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Keypad7))
         {
-            Debug.Log("Play level 3");
-            ScenesManager.instance.LoadScene(ScenesManager.Scene.Level3);
+            Debug.Log("Play level 1");
+            ScenesManager.instance.LoadScene(ScenesManager.Scene.Level1);
         }
     }
 
