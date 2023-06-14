@@ -24,32 +24,32 @@ public class ScenesManager : MonoBehaviour
         GameOver
     }
 
-    public void LoadScene(Scene scene)
+    public  void LoadScene(Scene scene)
     {
         SceneManager.LoadScene(scene.ToString());
     }
 
-    public void LoadNewGame()
+    public  void LoadNewGame()
     {
         SceneManager.LoadScene(Scene.Level1.ToString());
     }
 
-    public void LoadNextScene () 
+    public  void LoadNextScene () 
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void LoadMainMenu()
+    public  void LoadMainMenu()
     {
         SceneManager.LoadScene(Scene.MainMenu.ToString());
     }
 
-    public void LoadGameOver()
+    public  void LoadGameOver()
     {
         SceneManager.LoadScene(Scene.GameOver.ToString());
     }
 
-    public void LoadHighScore()
+    public  void LoadHighScore()
     {
         SceneManager.LoadScene(Scene.HighScores.ToString());
     }

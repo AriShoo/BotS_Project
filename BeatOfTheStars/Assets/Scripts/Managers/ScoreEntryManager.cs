@@ -54,8 +54,8 @@ public class ScoreEntryManager : MonoBehaviour
 
         string name = Letters[0].currentLetter + Letters[1].currentLetter + Letters[2].currentLetter;
 
-        //string scoreKey = "Score";
-        int score = 10273267;  //PlayerPrefs.GetInt(scoreKey);
+        string scoreKey = "Score";
+        int score = PlayerPrefs.GetInt(scoreKey);
         Debug.Log("Saving score " + score + " for name " + name);
         highScoreTable.AddHighScoreEntry(score, name);
 

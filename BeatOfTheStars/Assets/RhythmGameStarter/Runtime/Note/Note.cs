@@ -134,7 +134,7 @@ namespace RhythmGameStarter
                     return;
 
                 //alreadyMissed = true;
-                songManager.comboSystem.BreakCombo();
+                //songManager.comboSystem.BreakCombo();
             }
         }
     }
