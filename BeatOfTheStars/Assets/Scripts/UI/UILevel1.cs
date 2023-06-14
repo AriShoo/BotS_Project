@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class UILevel1 : MonoBehaviour
 {
-    [SerializeField] Button _continue;
+    /*[SerializeField] Button _continue;
     [SerializeField] Button _quit;
 
-    ScenesManager ScenesManager;
+    EventSystem EventSystem;
 
     void Start()
     {
@@ -26,7 +27,7 @@ public class UILevel1 : MonoBehaviour
     private void QuitGame()
     {
         ScenesManager.LoadGameOver();
-    }
+    }*/
 
 
 }
