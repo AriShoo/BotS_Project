@@ -60,4 +60,14 @@ public class ScenesManager : MonoBehaviour
     {
         SceneManager.LoadScene(Scene.HighScores.ToString());
     }
+
+    public void LoadSplash()
+    {
+        SceneManager.LoadScene(Scene.SplashScreen.ToString());   
+    }
+
+    public void LoadCredits ()
+    {
+        SceneManager.LoadScene(Scene.Credits.ToString());
+    }
 }

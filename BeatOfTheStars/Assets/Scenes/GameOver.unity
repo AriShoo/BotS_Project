@@ -564,7 +564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.46226418, g: 0.054512277, b: 0.21353877, a: 1}
+  m_Color: {r: 0.5471698, g: 0.09549662, b: 0.2692171, a: 0.49019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1501,8 +1501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use the joystick to choose a letter then press  (arcade button here) to
-    confirm choice
+  m_text: Use the joystick to choose a letter then press confirm to enter your name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3f77fe31a4bafed41a00f6944c1d3cc3, type: 2}
   m_sharedMaterial: {fileID: -9087737284444046174, guid: 3f77fe31a4bafed41a00f6944c1d3cc3,
@@ -2915,8 +2914,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000076294, y: -0.000022888}
-  m_SizeDelta: {x: 1440, y: 900}
+  m_AnchoredPosition: {x: 0, y: -0.000034332}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1981389530
 MonoBehaviour:
@@ -2931,14 +2930,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3207547, g: 0.08018868, b: 0.21029392, a: 1}
+  m_Color: {r: 0.8962264, g: 0.6045301, b: 0.7644926, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a24a3f4aa11e4af4a9e800241b3631ed, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
