@@ -3,7 +3,12 @@ guid: 46aa07a12618a154bbe239c77a2ed132
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - killAnim: {instanceID: 0}
+  - hitSound: {fileID: 8300000, guid: f52b5d45f09d22840bbe96c37ec75bc5, type: 3}
+  - applyNoteLenghtTarget: {instanceID: 0}
+  - songManager: {instanceID: 0}
+  - parentTrack: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -133,8 +133,8 @@ namespace RhythmGameStarter
                 if (action == NoteAction.LongPress && inInteraction)
                     return;
 
-                //alreadyMissed = true;
-                //songManager.comboSystem.BreakCombo();
+                alreadyMissed = true;
+                songManager.comboSystem.BreakCombo();
             }
         }
     }

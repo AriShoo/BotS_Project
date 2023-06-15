@@ -8,6 +8,7 @@ public class loadLevel : MonoBehaviour
 {
     [SerializeField] Button toLevel;
     [SerializeField] Button Quit;
+    [SerializeField] Button Credits;
     [HideInInspector]
 
     ScenesManager scenesManager;
@@ -17,6 +18,7 @@ public class loadLevel : MonoBehaviour
     {
         toLevel.onClick.AddListener(PlayGame);
         Quit.onClick.AddListener(QuitGame);
+        Credits.onClick.AddListener(LoadCredits);
     }
     private void PlayGame()
     {
@@ -33,6 +35,15 @@ public class loadLevel : MonoBehaviour
         {
             Debug.Log("Quit");
             Application.Quit();
+        }
+    }
+
+    private void LoadCredits()
+    {
+        if (Input.GetKey(KeyCode.Keypad7))
+        {
+            Debug.Log("Load credits");
+            ScenesManager.instance.LoadScene(ScenesManager.Scene.Credits);
         }
     }
 

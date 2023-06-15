@@ -6,9 +6,16 @@ public class ScenesManager : MonoBehaviour
 {
     public static ScenesManager instance;
 
+    public static bool visible;
+
     private void Awake()
     {
-        instance = this; 
+        instance = this;
+    }
+
+    private void Start()
+    {
+        Cursor.visible = false;
     }
 
     public enum Scene
