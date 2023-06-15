@@ -1284,7 +1284,7 @@ PrefabInstance:
         type: 3}
       propertyPath: notePrefabMapping
       value: 
-      objectReference: {fileID: 11400000, guid: dbf2927d18abb3541909bb3eb1ae9f8b,
+      objectReference: {fileID: 11400000, guid: d4872796bb166704f8c287c90537df3c,
         type: 2}
     - target: {fileID: 3281515198616772172, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
@@ -1497,7 +1497,7 @@ PrefabInstance:
         type: 3}
       propertyPath: defaultSong
       value: 
-      objectReference: {fileID: 11400000, guid: 9544a0904e5cb594e82b0bbac9535cf1,
+      objectReference: {fileID: 11400000, guid: ae503fe944d7b5e4e9f873375579c67f,
         type: 2}
     - target: {fileID: 5885475234114016897, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
@@ -1833,17 +1833,17 @@ PrefabInstance:
     - target: {fileID: 8506034807539397702, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
       propertyPath: up
-      value: 264
-      objectReference: {fileID: 0}
-    - target: {fileID: 8506034807539397702, guid: c1ce9239d495b4c488062fa3d1115a6c,
-        type: 3}
-      propertyPath: down
       value: 261
       objectReference: {fileID: 0}
     - target: {fileID: 8506034807539397702, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
+      propertyPath: down
+      value: 264
+      objectReference: {fileID: 0}
+    - target: {fileID: 8506034807539397702, guid: c1ce9239d495b4c488062fa3d1115a6c,
+        type: 3}
       propertyPath: left
-      value: 260
+      value: 265
       objectReference: {fileID: 0}
     - target: {fileID: 8506034807539397702, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
@@ -1858,7 +1858,7 @@ PrefabInstance:
     - target: {fileID: 8506034807539397702, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
       propertyPath: keyMapping.values.Array.data[0]
-      value: '[4]'
+      value: '[5]'
       objectReference: {fileID: 0}
     - target: {fileID: 8506034807539397702, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
@@ -1868,7 +1868,7 @@ PrefabInstance:
     - target: {fileID: 8506034807539397702, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
       propertyPath: keyMapping.values.Array.data[2]
-      value: '[5]'
+      value: '[9]'
       objectReference: {fileID: 0}
     - target: {fileID: 8506034807539397702, guid: c1ce9239d495b4c488062fa3d1115a6c,
         type: 3}
