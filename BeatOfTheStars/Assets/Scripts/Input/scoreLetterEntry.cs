@@ -46,7 +46,7 @@ public class scoreLetterEntry : MonoBehaviour
             Debug.Log(letter.text);
         }
 
-        if (Input.GetKeyUp(KeyCode.Keypad7))
+        if (Input.GetKeyUp(KeyCode.Keypad4))
         {
             currentLetter = letter.text;
             Debug.Log("Submit button pressed");

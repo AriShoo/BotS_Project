@@ -22,7 +22,7 @@ public class loadLevel : MonoBehaviour
     }
     private void PlayGame()
     {
-        if (Input.GetKey(KeyCode.Keypad7))
+        if (Input.GetKey(KeyCode.Keypad4))
         {
             Debug.Log("Play level 1");
             ScenesManager.instance.LoadScene(ScenesManager.Scene.Level1);
@@ -31,7 +31,7 @@ public class loadLevel : MonoBehaviour
 
     private void QuitGame()
     {
-        if (Input.GetKey(KeyCode.Keypad7))
+        if (Input.GetKey(KeyCode.Keypad4))
         {
             Debug.Log("Quit");
             Application.Quit();
@@ -40,7 +40,7 @@ public class loadLevel : MonoBehaviour
 
     private void LoadCredits()
     {
-        if (Input.GetKey(KeyCode.Keypad7))
+        if (Input.GetKey(KeyCode.Keypad4))
         {
             Debug.Log("Load credits");
             ScenesManager.instance.LoadScene(ScenesManager.Scene.Credits);

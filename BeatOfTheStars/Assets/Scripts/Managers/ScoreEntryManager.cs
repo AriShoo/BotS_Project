@@ -31,7 +31,7 @@ public class ScoreEntryManager : MonoBehaviour
 
 
 
-        if (Input.GetKeyUp(KeyCode.Keypad7))
+        if (Input.GetKeyUp(KeyCode.Keypad4))
         {
             Letters[letterIndex].enabled = false;
             letterIndex++;

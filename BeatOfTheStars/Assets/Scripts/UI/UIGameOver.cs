@@ -26,7 +26,7 @@ public class UIGameOver : MonoBehaviour
     public void GameFinished()
     {
 
-        if (Input.GetKey(KeyCode.Keypad7))
+        if (Input.GetKey(KeyCode.Keypad4))
         {
             Debug.Log("Load Game over screen");
             ScenesManager.instance.LoadScene(ScenesManager.Scene.GameOver);

@@ -70,4 +70,9 @@ public class ScenesManager : MonoBehaviour
     {
         SceneManager.LoadScene(Scene.Credits.ToString());
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
